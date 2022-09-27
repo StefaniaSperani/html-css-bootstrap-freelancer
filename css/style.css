@@ -22,6 +22,12 @@ body{
     background-color: var(--black);
 }
 
+
+/* nav */
+
+nav .nav-link{
+    color: var(--white);
+}
 /* main */
 #hero{
     padding-top: 100px;
@@ -33,6 +39,24 @@ img.avatar{
 }
 #portfolio img{
     max-width: 100%;
+}
+
+.overlay{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: ; */
+    color: var(--green);
+    display: none;
+}
+
+.img-overlay:hover .overlay{
+    display: flex;
+    cursor: pointer;
 }
 /* header */
 header{
