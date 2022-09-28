@@ -95,9 +95,10 @@ img.avatar{
     opacity: 1;
 }
 
-.mybtn:hover{
-    color: var(--green);
-    background-color: var(--white);
+
+#mybtn:hover{ 
+    color: var(--green) !important;
+    background-color: var(--white) !important;
     transition: 1s;
 }
 
