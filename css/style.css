@@ -122,8 +122,8 @@ img.avatar{
 /* Footer */
 
 .social-icons{
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
