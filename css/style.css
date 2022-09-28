@@ -23,8 +23,17 @@ body{
 }
 
 
-/* nav */
+/* header */
+header{
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    width: 100%;
+    padding: 10px;
+}
 
+/* nav */
 nav .nav-link{
     color: var(--white);
 }
@@ -86,16 +95,39 @@ img.avatar{
     opacity: 1;
 }
 
+/* .mybtn:hover{
+    color: var(--green);
+    background-color: var(--white);
+    transition: 1s;
+} */
 
-
-
-/* header */
-header{
+#contact .star:before , #contact .star:after{
     background-color: var(--black);
-    position: fixed;
-    top: 0;
-    z-index: 500;
-    width: 100%;
-    padding: 10px;
 }
 
+#contact .form-control{
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#contact .btn-primary{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+
+
+
+/* Footer */
+
+.social-icons{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.social-icons a{
+    color: var(--white);
+}
