@@ -28,9 +28,29 @@ body{
 nav .nav-link{
     color: var(--white);
 }
+
+
 /* main */
 #hero{
     padding-top: 100px;
+}
+
+.star:before , .star:after{
+    content: "";
+    display: block;
+    background-color: var(--white);
+    height: 3px;
+    width: 40%;
+}
+.star{
+    width: 300px;
+}
+
+.star .fa-solid.fa-start{
+    width: 20%;
+}
+#portfolio .star:before , #portfolio .star:after{
+    background-color: var(--black);
 }
 
 img.avatar{
@@ -41,29 +61,41 @@ img.avatar{
     max-width: 100%;
 }
 
-.overlay{
+.overlay-container{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.overlay-container:after{
+    content: "+";
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: ; */
-    color: var(--green);
-    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.322);
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+.overlay-container:hover::after{
+    opacity: 1;
 }
 
-.img-overlay:hover .overlay{
-    display: flex;
-    cursor: pointer;
-}
+
+
+
 /* header */
 header{
-    background-color:rgb(51, 46, 46);
+    background-color: var(--black);
     position: fixed;
-    height: 90px;
     top: 0;
+    z-index: 500;
     width: 100%;
+    padding: 10px;
 }
 

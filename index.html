@@ -26,7 +26,7 @@
               <div class="collapse navbar-collapse" id="boot-navbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active text-uppercase" aria-current="page" href="#"><strong>Portfolio</strong></a>
+                    <a class="nav-link text-uppercase" aria-current="page" href="#"><strong>Portfolio</strong></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-uppercase" href="#"><strong>About</strong></a>
@@ -48,8 +48,10 @@
                 <div class="row justify-content-center">
                     <div class="col-auto text-center">
                         <img class="avatar" src="./img/avatar.svg" alt="Avatar">
-                        <h1 class="text-uppercase ">Start Bootstrap</h1>
-                        <div> <i class="fa fa-star" aria-hidden="true"></i></div>
+                        <h1 class="text-uppercase py-2">Start Bootstrap</h1>
+                        <div class="star d-flex justify-content-between align-items-center m-auto pb-3"> 
+                            <i class="fa fa-star"></i>
+                        </div>
                         <div class="text-uppercase p-2"><strong>graphic artist - web designer - illustrator</strong></div>
                     </div>
                 </div>  
@@ -61,28 +63,47 @@
             <div class="container-md">
                 <div class="row justify-content-center">
                     <div class="col-auto text-center text-dark">
-                        <h2 class="text-uppercase p-2">Portfolio</h2>
-                        <div> <i class="fa fa-star" aria-hidden="true"></i></div>
-                        <div class="row row-cols-1">
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded img-overlay" src="./img/cabin.png" alt="Cabin">
-                                <div class=""><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        <h2 class="text-uppercase py-3">Portfolio</h2>
+                        <div class="star d-flex justify-content-between align-items-center m-auto pb-3"> 
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/cabin.png" alt="Cabin">
+                                </div>
                             </div>
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded" src="./img/cake.png" alt="Cake">
+
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/cake.png" alt="Cake">
+                                </div>
                             </div>
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded" src="./img/circus.png" alt="Circus">
+
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/circus.png" alt="Circus">
+                                </div>
                             </div>
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded" src="./img/game.png" alt="Game">
+
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/game.png" alt="Game">
+                                </div>
                             </div>
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded" src="./img/safe.png" alt="Safe">
+
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/safe.png" alt="Safe">
+                                </div>
                             </div>
-                            <div class="col col-md-6 col-lg-4 my-3">
-                                <img class="rounded" src="./img/submarine.png" alt="Submarine">
+
+                            <div class="col-12 col-md-6 col-lg-4 my-3">
+                                <div class="overlay-container rounded-3">
+                                    <img src="./img/submarine.png" alt="Submarine">
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -91,17 +112,22 @@
 
 <!-- Section ABOUT -->
         <section id="about" class="bg-green">
-            <div class="container-sm p-3">
+            <div class="container-md p-3">
                 <div class="row justify-content-center">
                     <div class="col-auto text-center">
                         <h1 class="text-uppercase p-2">About</h1>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <div class="row text-start">
-                            <p class="col-md-6 fs-5"><strong>Freelancer is a free bootstrap theme created by Star Bootstrap. <br>
-                                The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customizations.</strong></p>
+                        <div class="star d-flex justify-content-between align-items-center m-auto pb-3"> 
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="row text-start px-5 py-3">
+                            <p class="col-md-6 fs-5">Freelancer is a free bootstrap theme created by Star Bootstrap. <br>
+                                The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customizations.</p>
                             <p class="col-md-6 fs-5">Whether you're a student looking to showcase your work, a professional looking to attract clients,  
                             or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                         </div>
+                        <div class="my-3 text-center mybtn">
+                            <button type="button" class="btn btn-light border-1 border-white bg-transparent text-white fs-4 p-2 col-auto "><i class="fa-solid fa-download"></i> Download</button>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -133,3 +159,5 @@
 
 </body>
 </html>
+
+<!-- HOVER SUL BOTTONE DOWNLOAD -->
